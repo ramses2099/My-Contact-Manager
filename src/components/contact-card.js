@@ -2,18 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Card, Button, Icon} from 'semantic-ui-react';
 
-
 export default function ContactCard({contact, deleteContact}){
     return (
       <div>
           <Card>
             <Card.Content>
                 <Card.Header>
-                    <Icon name='user outline'/>{contact.FirstName} {contact.LastName}
+                    <Icon name="user outline"/>{contact.FirstName} {contact.LastName}
                 </Card.Header>
                 <Card.Description>
-                    <p><Icon name='phone'/>{contact.Phones[0].Contact_Phone}</p>
-                    <p><Icon name='mail outline'/>{contact.Emails[0].Contact_Email}</p>
+                    <p><Icon name="phone"/>{contact.Phone}</p>
+                    <p><Icon name="envelope outline"/>{contact.Email}</p>
                 </Card.Description>
             </Card.Content> 
             <Card.Content extra>

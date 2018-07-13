@@ -63,3 +63,13 @@ export const contacts =[
         ]
     }
 ];
+
+export default people =[
+    {
+        "Id": 1,
+        "FirstName": "Carlos",
+        "LastName": "Marte",
+        "Phone": "809-594-7896",
+        "Email": "cmarte@gmail.com"
+    }
+];
